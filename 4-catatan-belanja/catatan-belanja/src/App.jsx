@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const groceryItems = [
   {
     id: 1,
@@ -34,6 +36,12 @@ function Header() {
 }
 
 function Form() {
+  const [name, setName] = useState("");
+
+  function handleSubmit() {
+    
+  }
+
   const quantityNum = [...Array(20)].map((_, i) => (
     <option key={i + 1} value={i + 1}>
       {i + 1}
